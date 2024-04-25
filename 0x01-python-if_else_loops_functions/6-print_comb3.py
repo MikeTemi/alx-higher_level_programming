@@ -1,3 +1,7 @@
-for i in range(0, 10):
-    for j in range(i + 1, 10):
-        print(f"{i}{j}", end=", " if i < 8 else "\n")
+#!/usr/bin/python3
+for tens in range(0, 9):
+    for units in range(tens + 1, 10):
+        if (tens == 8 and units == 9):
+            print('{:d}{:d}'.format(tens, units))
+        else:
+            print('{:d}{:d},'.format(tens, units), end=' ')
